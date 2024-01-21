@@ -1,8 +1,10 @@
 package edu.maximofernandez;
+
 import org.junit.Assert;
 import org.junit.Test;
 import java.util.Arrays;
 import static java.util.stream.Collectors.joining;
+
 public class SnailTests {
     @Test
     public void SnailTest1() {
@@ -21,6 +23,6 @@ public class SnailTests {
     public void test(int[][] array, int[] result) {
         String text = int2dToString(array) + " should be sorted to " + Arrays.toString(result);
         System.out.println(text);
-        Assert.assertArrayEquals( result, Snail.snail(array));
+        Assert.assertArrayEquals(result, Snail.snail(array));
     }
 }

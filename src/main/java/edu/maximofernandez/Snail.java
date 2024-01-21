@@ -4,7 +4,7 @@ public class Snail {
     public static int[] snail(int[][] array) {
         if (array[0].length == 0) return new int[0];
         int n = array.length;
-        int[] result = new int[n*n];
+        int[] result = new int[n * n];
         int i = 0;
         int top = 0, bottom = n - 1, left = 0, right = n - 1;
         while (top <= bottom && left <= right) {
