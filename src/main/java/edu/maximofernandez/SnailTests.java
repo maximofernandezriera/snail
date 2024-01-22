@@ -30,9 +30,9 @@ public class SnailTests {
     }
 
     public void test(int[][] array, int[] result) {
-        String text = int2dToString(array) + " should be sorted to " + intArrayToString(result);
+        String text = int2dToString(array) + " should be travelled to " + intArrayToString(result);
         System.out.println(text);
-        Assert.assertArrayEquals(result, Snail.snail(array));
+        Assert.assertArrayEquals(result, SnailSort.snail(array));
     }
 
     public String intArrayToString(int[] a) {
