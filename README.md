@@ -1,8 +1,12 @@
 ## https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/train/java
 
+# Objetivo: Dada una matriz cuadrada n x n, devuelve los elementos de la matriz ordenados desde los elementos más externos hasta el elemento central, recorriendo la matriz en un patrón de caracol en sentido horario.
+
 Este es un clásico en la programación, lo difícil es establecer los límites del recorrido.
 
 Considerando la primera matriz del kata: https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/train/java
+
+## Una pista. Primero debemos recorrer la fila superior de izquierda a derecha, luego la columna de la derecha de arriba hacia abajo, seguido de la fila inferior de derecha a izquierda, y finalmente la columna de la izquierda de abajo hacia arriba. Este proceso se repite, cerrándose en espiral hacia el centro de la matriz.
 
 Daros cuenta que, inicialmente, los límites están configurados de esta manera:
 
@@ -25,7 +29,7 @@ Después de hacer esto, ajustamos los límites:
 - Límite inferior disminuye a 1.
 - Límite izquierdo aumenta a 1.
 
-Ahora, tus límites han cambiado:
+Ahora, los límites han cambiado:
 
 - Límite superior: 1
 - Límite inferior: 1
